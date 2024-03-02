@@ -2,10 +2,6 @@
 
 Timer Score is a timer library that provides a score from 0 to 1 for how well the timed code meets the expected target duration. The main driver for this library is the fact that most measurements of LLMs return a score from 0 to 1 (i.e. BLEU, ROUGE, etc). The Timer Score library enables you to similarly produce a score from 0 to 1 for performance.
 
-## History
-
-v0.1.0 - Mar 2024: First release
-
 ## Features
 
 __timer__ - Track time in milliseconds for any code or function  
