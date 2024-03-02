@@ -17,9 +17,7 @@ __sleep__ - Sleep the timer to allow for parallel code execution
 
 ## Documentation
 
-[LLM performance tracking](docs/LLM_PERFORMANCE.md)  
-[API documentation](docs/TIMER_SCORE_API.md)  
-[How it works](docs/sigmoid.ipynb)  
+[Documentation on github](https://github.com/bbenedict/timer_score/tree/main/docs)
 
 ## Installation
 
