@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "timer-score"
-version = "0.1.1"
+version = "0.1.2"
 description = "Timer Score is a timing library that provides a score from 0 to 1 for performance"
 authors = ["Bob Benedict <bbenedict@gmail.com>"]
 license = "MIT"
