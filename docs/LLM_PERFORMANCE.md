@@ -8,7 +8,7 @@ The target for total completion is 5 seconds.
 First install the timer_score library.
 
 ```
-pip install timer_score
+pip install timer-score
 ```
 
 Import the libraries and initialize the OpenAI client. Define the targets mentioned above as well.
