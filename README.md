@@ -20,7 +20,7 @@ __sleep__ - Sleep the timer to allow for parallel code execution
 First install the timer_score library.
 
 ```
-pip install timer_score
+pip install timer-score
 ```
 
 Instantiate the timer with your target duration.  Use timer.stop() when the task is complete and timer.score() to get the final score.  
