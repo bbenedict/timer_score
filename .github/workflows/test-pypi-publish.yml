@@ -1,0 +1,25 @@
+# This workflow will upload a Python Package to test-pypi when triggered
+# We only support manual execution
+
+name: Publish to test pypi
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    name: Build package
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.x"
+    - name: Install poetry
+      run: pip install poetry
+    - name: Install libraries
+      run: poetry install      
+    - name: Build a binary wheel and a source tarball
+      run: poetry build
