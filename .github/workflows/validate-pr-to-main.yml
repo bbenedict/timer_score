@@ -1,0 +1,25 @@
+name: 'Validate PR to main'
+
+on:
+  workflow_dispatch:
+  pull_request:
+      branches:
+      - main
+
+jobs:
+  validate-pr-to-main:
+    name: Run tests lint hints
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.x"
+    - name: Install poetry
+      run: pip install poetry
+    - name: Install libraries
+      run: poetry install      
+    - name: Run tests
+      run: ./scripts/test.sh
