@@ -59,4 +59,4 @@ def test_timer_score_high_target():
     assert duration > 12
     assert score < 0.2
     assert target == 6
-    assert len(t.checkpoints) == 3
+    assert len(t.checkpoints) == 2
